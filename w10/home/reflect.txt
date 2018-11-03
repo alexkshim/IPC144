@@ -109,7 +109,7 @@ avoiding cryptic variable names and using "break;" recklessly except for switch 
 
 
 
-6-	Do you feel that the quizzes about the week’s readings helped you learn more than you might have otherwise done.
+6-	Do you feel that the quizzes about the weekï¿½s readings helped you learn more than you might have otherwise done.
 
 Yes, I do feel so. previewing, learning from the lecture, and reviewing with workshops and milestones. This is perfect for learners.
 
@@ -158,11 +158,7 @@ Array? structure? these were almost alien language. I thought I would never unde
 
 But this time professor is great especially for feedbacks and I am relatively much better than I was in the last semester. For some difficult workshop, I spent even more than 10 hours in a day
 
-on fixing errors and it was mentally and physically so hard. Why I am doing this is since I failed once, if I don't get a good mark again, I will be no longer able to apply the co-op program and one of my dreams that
-
-I want to be a great Canadian citizen will be screwed up and then I will be eventually forced to go back to Korea...that's the worst scenario ever.
-
-This truth had me challenge and finish workshops within the due date and something happened. I am now good at IPC144. I learned a lot through running the codes.
+on fixing errors and it was mentally and physically so hard. I am now good at IPC144. I learned a lot through running the codes.
 
 By the way, every workshop has its own purpose, which seems to be used in our real life so it was fun to do those and to see how everything in our life actually works by doing those.
 
