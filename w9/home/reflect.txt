@@ -1,0 +1,41 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+1)	What are the possible return values of the function readRecord? What does this return value represent?
+
+-From 0 to 5. If nothing is found as a record, it returns 0 but if any of each record is found, this gets the number(or numbers) as many as the each record scanned.
+
+For example, if only isbn number found, this will be one and returns 1.
+
+In other cases, if all of them(which are five) found, this will return 5 and if nothing found, of course it is zero and returns 0.
+
+it represents how many records does it find and in other functions that using the readRecord function, those functions will regards on if the record is empty, broken or full and do the specific and different behaviour for that.  
+
+
+
+
+
+
+2)	What is the difference between opening a file in r, w, and a+ mode?
+
+-"r" mode is to read from the file and "w" mode is to write to the file and if the file exists, truncate the contents and write and if not exists,
+
+create a new file and write.
+
+"a+" mode is to open the file to write to the END of the file and possibly read. If the file found, it appends to the end of the file
+
+but if not exists, create the new one and since there is no record, it writes to the file.
+
+
+The differences amongst them are below.
+
+"r" mode just reads. nothing else like other mode such as w and a+.
+
+"w" mode writes and even make a new file if not exists, but it never reads or appends like "r" and "a+" mode.
+
+"a+" mode actually writes but only appends when the file exists. If not, basically it works like "w" mode and since this mode has "+" after
+a, possibly reads. If the user should use both reading and appending but just use "a" not "a+', this user will be screwed up when dealing with
+fscanf for reading records. And that was actually me who spent more than hours for this small missing of "+" today like an idiot. Learned and finally Earned it!

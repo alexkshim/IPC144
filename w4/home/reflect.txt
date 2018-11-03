@@ -1,0 +1,12 @@
+1)	Why do the arrays in this program have to be declared to hold 10 elements?
+
+In case the input is more than 4, it has to be so. If the user enters 10, this requires those 10 number of elements.
+
+2)	What are the advantages and disadvantages of using matching arrays?
+
+The advantage is it can vary because you initialize the indexs inside the arrays. However, the disadvatage is it can be more complicated and take more lines.
+
+3)	Was the at home portion of this workshop too easy, just right or too hard? Why? 
+
+This was extremely harder than other previous workshops including the in lab portion of this workshop
+because this requires making complicated loops at the bottom of the code.

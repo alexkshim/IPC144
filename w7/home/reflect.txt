@@ -1,0 +1,43 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+
+1) What is the advantage of passing values from a function through its parameters rather than through its return value? 
+
+-The advantage of passing values from a function through its parameters is that values which the parameter has, which are modified will be ALL returned with the void return type while you can't return all of them when you return a specific value without additional behaviours.
+
+This method is more simple when you wanna return many of values.
+
+
+
+
+
+
+
+
+2) Explain the meaning of the term dereference and identify an example in your code.
+
+-Dereference(indirection) means that making a pointer refer to the specific memory. (Changing the pointing-direction of it) For example,
+
+
+void decompose(const long long phoneNum, int *areaCode, int *prefix, int *lineNum) {
+	*areaCode = phoneNum / 10000000;
+	*prefix = (phoneNum % 10000000) / 10000;
+	*lineNum = (phoneNum % 10000000) % 10000;
+}
+
+in this function, I am dereferencing areaCode to point to the new memory address of the value(phoneNum / 10000000).
+
+
+
+
+
+
+
+
+3) Explain what is stored in a pointer variable.
+
+-The memory address of what it is pointing to.

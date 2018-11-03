@@ -1,0 +1,3 @@
+What I learned from the workshop2 is windows and the matrix have some differences from each other when it comes to compiling a C code, especially when a calculation is run. To make it fit both operating systems, the user has to pay attention on it.(For example, adding a very little more value to the code that will affect the output just for this reason like what shown on the workshop2.
+
+In addition, I learned how to use division(/) and modulus(%) in a calculation and how to change int value to double value in 'printf' statements.

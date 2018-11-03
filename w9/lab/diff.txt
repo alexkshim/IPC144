@@ -1,0 +1,10 @@
+
+In line number 31 of your output:
+The output should be:
+Select: 4
+But your output is: 
+Select: 1
+        ^
+--------|
+Professor's character ASCII code: hex(34), dec(52)
+un-matched character ASCII code: hex(31), dec(49)

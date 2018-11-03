@@ -1,0 +1,37 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+
+1) When passing an array to a function is it "by address" or "by value" - explain.
+
+-It is passing by address because the user will pass the pointer to the array when it passing the function.
+
+(passing the fisrt element then it will automatically pass others (I mean, all of the things inside the array) when using passing an array to function by reference).
+
+
+
+
+
+2) Explain why functions with an array parameter are usually complemented with an additional integer parameter (reference specifics in this workshop to explain your answer).
+
+-Because the another integer parameter will be used for the index of the array parameter.
+
+there is one example in this workshop,
+
+void displayInventory(const struct Book book[], const int size)
+
+As shown above, the constant structure Book book[] is using size as its index to change its index for size times.
+
+
+
+
+
+
+3) Why do some of the functions in this workshop specify "const" for the array parameters and not in others?
+
+-if passing one variable(argument) to another(parameter), it sometimes change the value unless it is passing address with const values.
+
+Constant -> If the user doesn't want what is inside to be modified

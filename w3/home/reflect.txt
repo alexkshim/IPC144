@@ -1,0 +1,11 @@
+1)	Name all the iteration constructs?
+- "for", "while"; "do while"
+
+
+2)	Explain the difference between a “do while” and a “while” loop?
+- "do while" loops at least once whatever the condition is. however, "while" checks the condition before it is run.  
+
+
+3)	What is a conditional expression? 
+- A conditional expression is to select and do what depending on its conditions between or among selections.
+This basically keeps doing or just does some specific works under the condition the user modified with expressions including statements.

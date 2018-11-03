@@ -1,0 +1,126 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+1-	Compare a string to an array of chars.  What is the difference?
+
+Basically working similarly, however, you will need to initialize each character while string fix!!!!!!!!!!!!!!!
+
+
+
+
+2-	What format string do you use to ensure that the number of input characters read by scanf() into a C-style string does not exceed the 10 bytes of space that you have allocated for the string?
+
+
+
+
+
+3-	Why does strcmp(const char*, const char*) return 0 for two matching strings?
+
+As the description, This will cause 0 if they are identical (matching to each other). add!
+
+
+
+4-	If you concatenate "Hello" to "C" how many bytes of memory do you need to store the result?
+
+
+
+
+
+
+
+5-	What was the most interesting thing you learned this semester?
+
+what should be avoided for the real world of coding (in work places) not to pay for that. Such as reusability (reusing prepared functions as much as possible), 
+
+avoiding cryptic variable names and using "break;" recklessly except for switch statements and so on.
+
+
+
+
+
+6-	Do you feel that the quizzes about the week’s readings helped you learn more than you might have otherwise done.
+
+Yes, I do feel so. previewing, learning from the lecture, and reviewing with workshops and milestones. This is perfect for learners.
+
+
+
+
+
+7-	Are there any things that you particularly like about the way that the course is delivered?
+
+As I said above, previewing, learning from in class, and reviewing were good for me and I may like it.
+
+
+
+
+
+8-	Are there any things that you particularly dislike about the way that the course is delivered?
+
+everything is good. Nothing is what I dislike.
+
+
+
+
+9-	Is there anything you would like to see added to the way the course is delivered?
+
+Nothing else to see. It was enough.
+
+
+
+
+10-	How would you rate your level of understanding of the course topics? 
+a.	Very good
+b.	Pretty good
+c.	Adequate
+d.	Poor
+
+It is a. I hope so.
+
+
+
+
+11-	Did you enjoy doing the workshops? Why?
+
+I enjoyed a lot because doing workshops was painful but worthy and fun. I am actually a second semester student who failed IPC144 once and last time the professor was good but I was so bad though. I did not study that much.
+
+before I come to IPC144SMM, I did not even know how to use if statment properly and why the main function returns 0 until the end of the semester. I was that bad. 
+
+Array? structure? these were almost alien language. I thought I would never understand those.
+
+But this time professor is great especially for feedbacks and I am relatively much better than I was in the last semester. For some difficult workshop, I spent even more than 10 hours in a day
+
+on fixing errors and it was mentally and physically so hard. Why I am doing this is since I failed once, if I don't get a good mark again, I will be no longer able to apply the co-op program and one of my dreams that
+
+I want to be a great Canadian citizen will be screwed up and then I will be eventually forced to go back to Korea...that's the worst scenario ever.
+
+This truth had me challenge and finish workshops within the due date and something happened. I am now good at C. I learned a lot through running the codes.
+
+By the way, every workshop has its own purpose, which seems to be used in our real life so it was fun to do those and to see how everything in our life actually works by doing those.
+
+
+
+12-	Did you enjoy the LabA activities? 
+
+Yes, everything is described above.
+
+
+
+
+13-	Do you feel that LabA helped you understand how to think like a programmer?
+
+Yes, everything is described above. Now I have much stronger understaning of what around me. For example, whenever I see ttc automatic doors, I Always logically think how it is programmed and what problems it has, and how I can
+
+make it better. I can even explain what would be going through inside a Presto machine. And the most important thing... I count from 0. NOT 1.
+
+
+
+
+14-	The content of this course was
+a.	Too little
+b.	Just right
+c.	Too much
+
+It is b. Just right.

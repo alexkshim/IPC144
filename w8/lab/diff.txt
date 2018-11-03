@@ -1,0 +1,10 @@
+
+In line number 62 of your output:
+The output should be:
+ISBN      Title               Year Price  Quantity
+But your output is: 
+ISBN      Title               Year Price   Quantity
+                                          ^
+------------------------------------------|
+Professor's character ASCII code: hex(51), dec(81)
+un-matched character ASCII code: hex(20), dec(32)

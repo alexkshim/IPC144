@@ -1,0 +1,16 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+1)	Discuss the advantages of using an array of structs versus parallel arrays when dealing with related data 
+
+when using array of structs, it is easier to see and thus, it is also easier to modify than parallel arrays.
+Parallel arrays are very hard to sort its data due to its lack of flexibilities. It requires more fields than array of structs for every single change and work.
+
+
+
+2)	The preferred method of declaring a struct data type is in a header file. Briefly explain why.
+
+The source code can be stored more than a file and thus, we can write code seperately. This is also making the user manage many files of code more easily because the user does not need to add everything in a single space. It makes coding more simple.

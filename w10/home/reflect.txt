@@ -1,0 +1,193 @@
+/*********************************************************
+Name: Kyuyoung Shim
+ID: 102-562-162
+Section: MM
+*********************************************************/
+
+1-	Compare a string to an array of chars.  What is the difference?
+
+Basically working similarly, however, you will need to initialize each character and '\0' at the end while string automatically recognize the series of characters and '\0'.
+
+Why using a string is much better than using an array of chars when the user deals with a long line of characters? 
+
+It is because as explained above, the user should initialize each characters like below.
+
+
+char myName[14] = {'K','y','u','y','o','u','n','g',' ','S','h','i','m','\0'};
+
+
+it is that much painful. Neither it is visually good for a human being, nor easy to type each of these things with "''", "," , "\0".
+
+However, if the user uses a string like below,
+
+
+char myName[14] = "Kyuyoung Shim"
+
+
+It is visually way much better and typing this is that much easy.
+
+And when the user calls the variable somewhere like printf() or scanf(), if the user uses an array of chars,
+
+the user should specify it as "%c" with an array counting every single time because it is char and array.
+
+But a string makes it way more simple.
+
+the user may just simply use "%s" for printing and "%14[^\n]" for scaning with myName, 
+
+which is not needed to have any loop for just printing or scaning this small pieces of characters.
+
+"14" means its limit and "[^\n]" means it will not end until it finds '\n'. "^" means "not" and "\n" means a new line.
+
+
+
+
+2-	What format string do you use to ensure that the number of input characters read by scanf() into a C-style string does not exceed the 10 bytes of space that you have allocated for the string?
+
+As what is described above. I use "%10[^\n]" and The MEANINGFUL number of input characters is 9 because the 10th character may be '\0' in common.
+
+and this will stop scaning once it finds a new line.
+
+
+
+
+3-	Why does strcmp(const char*, const char*) return 0 for two matching strings?
+
+As the description in the IPC144 page states, This function is to compare two strings and this will cause 0 if they are identical (matching to each other).
+
+It makes some sense. the case that these two strings are just when they match each other. That case should be just one case
+
+and the most appropraite way to indicate this will be 0 since 0 is only number that is not a positive or negative number of all numbers.
+
+In other words, Zero is only a special number that is neither positive nor negative and the matching case is also just one special case.
+
+Therefore, it makes sense.
+
+If I need to explain about other cases, this will give a negative value if the first non-matching char of the first string is LOWER than the char
+
+in the second string under the host computer's collating sequence.
+
+Otherwise, this will give a positive value when the first non-matching char of the first string is HIGHER than the char
+
+in the second string under the host computer's collating sequence. This idea is derived from IPC144 page.
+
+
+
+
+4-	If you concatenate "Hello" to "C" how many bytes of memory do you need to store the result?
+
+A char is 1 byte. Hence,
+
+"Hello" has 5 bytes. BUT in a string, this will be 6 including '\0'. 
+
+"C" has 1 byte. BUT in a string, this will be 2 including '\0'. BUT to concatenate "Hello" to itself, it needs  7 bytes including '\0'.
+
+I don't get what exactly this question want me to show as a result, but if I want to print just "CHello",
+
+as a total bytes of memory to store the result, this will be 13 bytes like shown below.
+
+void result(void) {
+	char c[7] = "C"; 	 // to store 7 bytes even if it now has only 2 bytes
+	char hello[6] = "Hello"; // Hello is 5 bytes but it actually has one more byte and that is '\0'. Thus it is 6 bytes
+
+	strcat(c, hello);	 // concatenate hello to c
+	printf("%s\n", c);	 // just to see what is the result. If the memory is too short, this will print garbage and the compiler will show errors
+}
+
+Thus, if it only means the first address as the result, the answer is 7 bytes.
+
+else, if it means the total bytes of memory used for only strings, the answer is 13 bytes.
+
+
+
+
+5-	What was the most interesting thing you learned this semester?
+
+What should be avoided for the real world of coding (in work places) not to pay for that. Such as reusability (reusing prepared functions as much as possible), 
+
+avoiding cryptic variable names and using "break;" recklessly except for switch statements and so on.
+
+
+
+
+6-	Do you feel that the quizzes about the week’s readings helped you learn more than you might have otherwise done.
+
+Yes, I do feel so. previewing, learning from the lecture, and reviewing with workshops and milestones. This is perfect for learners.
+
+
+
+
+7-	Are there any things that you particularly like about the way that the course is delivered?
+
+As I said above, previewing, learning from in class, and reviewing were good for me and I may like it.
+
+
+
+
+8-	Are there any things that you particularly dislike about the way that the course is delivered?
+
+Everything is good. Nothing is what I dislike.
+
+
+
+
+9-	Is there anything you would like to see added to the way the course is delivered?
+
+Nothing else to see. It was just right.
+
+
+
+
+10-	How would you rate your level of understanding of the course topics? 
+a.	Very good
+b.	Pretty good
+c.	Adequate
+d.	Poor
+
+It is b. I am stil not perfect and will keep working on my lacks. Then someday...
+
+
+
+
+11-	Did you enjoy doing the workshops? Why?
+
+I enjoyed a lot because doing workshops was painful but worthy and fun. I am actually a second semester student who failed IPC144 once and last time the professor was good but I was so bad though. I did not study that much.
+
+before I come to IPC144SMM, I did not even know how to use if statment properly and why the main function returns 0 until the end of the semester. I was that bad. 
+
+Array? structure? these were almost alien language. I thought I would never understand those.
+
+But this time professor is great especially for feedbacks and I am relatively much better than I was in the last semester. For some difficult workshop, I spent even more than 10 hours in a day
+
+on fixing errors and it was mentally and physically so hard. Why I am doing this is since I failed once, if I don't get a good mark again, I will be no longer able to apply the co-op program and one of my dreams that
+
+I want to be a great Canadian citizen will be screwed up and then I will be eventually forced to go back to Korea...that's the worst scenario ever.
+
+This truth had me challenge and finish workshops within the due date and something happened. I am now good at IPC144. I learned a lot through running the codes.
+
+By the way, every workshop has its own purpose, which seems to be used in our real life so it was fun to do those and to see how everything in our life actually works by doing those.
+
+
+
+
+12-	Did you enjoy the LabA activities? 
+
+Yes, everything is described above. I used to hate C and this course but now this is my faviourite one.
+
+
+
+
+13-	Do you feel that LabA helped you understand how to think like a programmer?
+
+Yes, everything is described above. Now I have much stronger understaning of what around me. For example, whenever I see ttc automatic doors, I Always logically think how it is programmed and what problems it has, and how I can
+
+make it better. I can even explain what would be going through inside a Presto machine. And the most important thing... I count from 0. NOT 1.
+
+
+
+
+14-	The content of this course was
+a.	Too little
+b.	Just right
+c.	Too much
+
+It is b. Just right.
